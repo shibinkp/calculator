@@ -1,2 +1,2 @@
 # calculator
-Simple calculator application .
+Simple calculator application in flutter.
