@@ -11,6 +11,8 @@ class HomePageState extends State<HomePage> {
   final TextEditingController t1 = new TextEditingController(text: "Enter first number");
   final TextEditingController t2 = new TextEditingController(text: "Enter second number");
 
+  
+  //addition of two numbers 
   void doAddition() {
     setState(() {
       num1 = int.parse(t1.text);
@@ -18,7 +20,7 @@ class HomePageState extends State<HomePage> {
       sum = num1 + num2;
     });
   }
-
+  //subtraction of two numbers
   void doSub() {
     setState(() {
       num1 = int.parse(t1.text);
@@ -26,7 +28,7 @@ class HomePageState extends State<HomePage> {
       sum = num1 - num2;
     });
   }
-
+  //multiplication of two numbers
   void doMul() {
     setState(() {
       num1 = int.parse(t1.text);
@@ -35,6 +37,7 @@ class HomePageState extends State<HomePage> {
     });
   }
 
+    //division of two numbers
   void doDiv() {
     setState(() {
       num1 = int.parse(t1.text);
@@ -43,6 +46,7 @@ class HomePageState extends State<HomePage> {
     });
   }
 
+  //clear screen operation
   void doClear() {
     setState(() {
       t1.text = "0";
@@ -50,6 +54,7 @@ class HomePageState extends State<HomePage> {
     });
   }
 
+  //UI side
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
